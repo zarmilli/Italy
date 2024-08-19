@@ -7,19 +7,67 @@ body, html {
 
 .hero {
     position: relative;
-    height: 95vh;
+    height: 85vh;
     width: 100%;
-    overflow: hidden;
-}
-
-#heroVideo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1;
+    background-image: url('hero.jpg');
+    background-size: cover;
+    background-position: center;.hero {
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        background-image: url('your-background-image.jpg');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 1;
+    }
+    
+    .hero-content {
+        position: relative;
+        z-index: 2;
+        color: white;
+    }
+    
+    .hero-content h1 {
+        font-size: 4rem;
+        margin: 0;
+    }
+    
+    .hero-content .subtext {
+        font-size: 1.2rem;
+        margin-top: 1rem;
+        color: #f0f0f0;
+    }
+    
+    .scroll-icon {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .scroll-icon img {
+        width: 50px;
+        height: auto;
+        cursor: pointer;
+    }
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .hero-overlay {
@@ -29,15 +77,13 @@ body, html {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
 }
 
 .hero-content {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    z-index: 2;
     color: white;
-    text-align: center;
 }
 
 .hero-content h1 {
@@ -59,11 +105,10 @@ body, html {
 }
 
 .scroll-icon img {
-    width: 50px; /* Adjust size as needed */
+    width: 50px;
     height: auto;
     cursor: pointer;
 }
-
 
 /* Intro Section Styles */
 .intro {
@@ -142,4 +187,47 @@ body {
 
 .cta-button:hover {
     background-color: #1ebd58;
+}
+
+.video-banner {
+    position: relative;
+    width: 100%;
+    height: 60vh; /* Adjust the height as needed */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#bannerVideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.video-banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent overlay */
+    z-index: 1;
+}
+
+.video-banner-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+.video-banner-content h2 {
+    font-size: 3rem;
+    margin: 0;
 }
