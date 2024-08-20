@@ -8,15 +8,20 @@
 </head>
 <body>
     <div class="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1>Welcome to Italy</h1>
-            <p class="subtext">Pull airplane up to get your free ticket</p>
-        </div>
-        <div class="scroll-icon">
-            <img src="flight.png" alt="Scroll Icon">
-        </div>
-    </div>    
+    <!-- Fallback Image as Background in CSS -->
+    <video autoplay muted loop playsinline id="heroVideo">
+        <source src="hero.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1>Welcome to Italy</h1>
+        <p class="subtext">Pull airplane up to get your free ticket</p>
+    </div>
+    <div class="scroll-icon">
+        <img src="flight.png" alt="Scroll Icon">
+    </div>
+</div>    
     
     <section class="intro">
         <div class="intro-content">
@@ -25,15 +30,17 @@
         </div>
     </section>
     <section class="video-banner">
-        <video autoplay muted loop id="bannerVideo">
-            <source src="hero.mp4" type="video/mp4">
+        <!-- Fallback Image as Background in CSS -->
+        <video autoplay muted loop playsinline id="bannerVideo">
+            <source src="banner video.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
         <div class="video-banner-overlay"></div>
         <div class="video-banner-content">
             <h2>Italy at a glance</h2>
         </div>
-    </section>        
+    </section>
+            
     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdJjLpje3oJD3BV-S-EuDMzJ7u9oRJy_JPiF6qZ9ay27oPZIw/viewform?embedded=true" width="350" height="2069" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     <section class="banner">
         <div class="banner-content">
